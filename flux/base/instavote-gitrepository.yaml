@@ -3,9 +3,11 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: instavote
-  namespace: flux-system
+  namespace: instavote
 spec:
   interval: 1h
   ref:
     branch: main
-  url: https://github.com/kiplongu/instavote.git
+  secretRef:
+    name: github-instavote
+  url: https://github.com/kiplongu/instavote-deploy.git
