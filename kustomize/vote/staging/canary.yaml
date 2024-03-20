@@ -7,5 +7,6 @@ spec:
   analysis:
     interval: 30s
     threshold: 3
-    iterations: 5
+    maxWeight: 50
+    stepWeight: 5
 
