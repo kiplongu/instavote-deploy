@@ -6,6 +6,7 @@ resources:
 
 patchesStrategicMerge:
 - deployment.yaml
+- canary.yaml
 
 namespace: instavote
 
