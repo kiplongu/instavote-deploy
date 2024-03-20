@@ -6,7 +6,6 @@ resources:
 
 patchesStrategicMerge:
 - deployment.yaml
-- service.yaml
 
 namespace: instavote
 
@@ -16,7 +15,7 @@ images:
 
 replicas:
   - name: vote
-    count: 1
+    count: 0
 
 commonLabels:
   project: instavote
